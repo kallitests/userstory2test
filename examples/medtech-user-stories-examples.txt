@@ -1,0 +1,55 @@
+```
+USER STORIES — MEDTECH / HEALTHTECH (FR / EN)
+
+=== FRANÇAIS ===
+
+1. En tant que clinicien, je veux recevoir une alerte automatique lorsqu'un résultat de séquençage révèle une variante actionnable, afin de pouvoir orienter rapidement le patient vers un traitement ciblé adapté.
+
+2. En tant que technicien de laboratoire, je veux scanner le code-barres d'un échantillon biologique pour vérifier automatiquement sa traçabilité, afin d'éviter toute erreur d'identification patient.
+
+3. En tant que médecin prescripteur, je veux consulter l'historique complet des résultats d'analyses d'un patient sur une frise chronologique, afin de suivre l'évolution de sa pathologie dans le temps.
+
+4. En tant qu'administrateur qualité, je veux générer automatiquement un rapport d'écarts (deviation report) lorsqu'un test de contrôle qualité échoue, afin de documenter l'incident conformément aux exigences ISO 13485.
+
+5. En tant qu'utilisateur de la plateforme, je veux que mon mot de passe expire après 90 jours et que l'historique des connexions soit conservé, afin de respecter les exigences de traçabilité 21 CFR Part 11.
+
+6. En tant que patient, je veux pouvoir consulter mes résultats d'analyses médicales depuis une application sécurisée, afin d'accéder à mes données de santé sans dépendre d'un rendez-vous physique.
+
+7. En tant que pharmacien hospitalier, je veux être alerté en cas d'interaction médicamenteuse détectée lors de la saisie d'une nouvelle prescription, afin de prévenir tout risque iatrogène pour le patient.
+
+8. En tant que responsable qualité, je veux exporter une matrice de traçabilité reliant chaque exigence à ses tests de validation, afin de préparer un audit d'accréditation ISO 15189.
+
+9. En tant qu'infirmier, je veux enregistrer la prise de constantes vitales d'un patient directement depuis une tablette au chevet du lit, afin de réduire les erreurs de transcription manuelle.
+
+10. En tant qu'utilisateur, je veux que toute modification d'un dossier patient soit horodatée et associée à l'identité de l'utilisateur ayant effectué l'action, afin de garantir un audit trail conforme aux exigences réglementaires.
+
+11. En tant que data manager, je veux que les données de santé hébergées soient chiffrées au repos et en transit, afin de respecter les exigences GDPR et le référentiel HDS.
+
+12. En tant que biologiste médical, je veux valider un lot de résultats d'analyses en une seule action après contrôle, afin de réduire le temps de traitement sans compromettre la double vérification réglementaire.
+
+=== ENGLISH ===
+
+1. As a clinician, I want to receive an automatic alert when a sequencing result reveals an actionable variant, so that I can quickly orient the patient toward an appropriate targeted treatment.
+
+2. As a lab technician, I want to scan a biological sample's barcode to automatically verify its traceability, so that I can avoid any patient identification error.
+
+3. As a prescribing physician, I want to view a patient's complete test result history on a timeline, so that I can track the progression of their condition over time.
+
+4. As a quality administrator, I want a deviation report to be automatically generated when a quality control test fails, so that the incident is documented in compliance with ISO 13485 requirements.
+
+5. As a platform user, I want my password to expire after 90 days and my login history to be retained, so that the system complies with 21 CFR Part 11 traceability requirements.
+
+6. As a patient, I want to view my medical test results through a secure application, so that I can access my health data without depending on an in-person appointment.
+
+7. As a hospital pharmacist, I want to be alerted when a drug interaction is detected while entering a new prescription, so that I can prevent any iatrogenic risk to the patient.
+
+8. As a quality manager, I want to export a traceability matrix linking each requirement to its validation tests, so that I can prepare for an ISO 15189 accreditation audit.
+
+9. As a nurse, I want to record a patient's vital signs directly from a bedside tablet, so that I can reduce manual transcription errors.
+
+10. As a user, I want every modification to a patient record to be timestamped and linked to the identity of the user who performed it, so that an audit trail compliant with regulatory requirements is guaranteed.
+
+11. As a data manager, I want hosted health data to be encrypted at rest and in transit, so that the system complies with GDPR and the HDS (Hébergeur de Données de Santé) framework.
+
+12. As a medical biologist, I want to validate a batch of test results in a single action after review, so that processing time is reduced without compromising the mandatory double-check requirement.
+```
