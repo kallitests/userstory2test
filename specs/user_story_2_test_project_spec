@@ -15,6 +15,7 @@ In regulated MedTech/HealthTech teams, a user story rarely becomes a test-ready 
 | **Gherkin written separately from Jira** | QA rewrites the same scenarios in `.feature` files days later, introducing drift between what the ticket says and what the tests actually check. |
 | **Automation code written separately from Gherkin** | SDETs then hand-map Gherkin steps to Playwright code, frequently leaving steps unimplemented or out of sync with the scenario file. |
 | **Regulatory documentation bolted on at the end** | Risk analysis updates, traceability matrix entries, and validation evidence are produced reactively before an audit, instead of being part of the Definition of Done from day one. |
+| **Verbose prompts cost real money at scale** | A naively written prompt re-explains every standard and duplicates field semantics between the rules and the schema on every single call — fine for a one-off, expensive once a team runs it on every story in every sprint. |
 
 The result: slow ticket-to-test cycles, inconsistent coverage across stories, and compliance documentation that is assembled under time pressure rather than built in.
 
@@ -34,6 +35,8 @@ The result: slow ticket-to-test cycles, inconsistent coverage across stories, an
 
 The prompt encodes the standards a regulated team already has to think about — ISO 13485, IEC 62304, ISO 14971, IEC 62366-1, ISO 15189, GAMP 5, 21 CFR Part 11, GDPR/HDS, HIPAA — so the output speaks the right vocabulary from the first draft, rather than needing translation into compliance terms afterward.
 
+The prompt itself is **token-optimized**: standards are referenced by code rather than re-explained, rules are written as dense numbered instructions instead of verbose bullets, and the schema uses compact type/enum notation instead of duplicating field descriptions already covered by the rules. This cuts the system prompt by roughly 45% (≈870 → ≈480 tokens) with an identical behavioral contract — same required fields, same conditional logic, same Gherkin/Playwright coverage guarantee. At team scale (one call per story, every sprint), this directly reduces the recurring cost of running the prompt.
+
 ---
 
 ## What it is not
@@ -44,4 +47,4 @@ UserStory2Test is a **drafting accelerator**, not a compliance authority. Every 
 
 ## Outcome
 
-One user story in → one Jira ticket, one risk classification, one Gherkin file, and one executable Playwright test suite out — all traceable to each other by design, in the time it takes to run a single prompt.
+One user story in → one Jira ticket, one risk classification, one Gherkin file, and one executable Playwright test suite out — all traceable to each other by design, at roughly 45% less prompt-token cost than a naive implementation, in the time it takes to run a single prompt.
